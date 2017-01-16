@@ -1,0 +1,46 @@
+Vertikal
+2.19 rem margin + menu padding
+
+
+6.25rem links/rechts
+
+text:
+
+maximale breite:
+1234px = 77.69rem
+ spalten abstand 2.19
+
+body block max 64.44rem
+
+
+block rechts fixed float right: 10.88 rem
+
+
+
+impressum footer!
+fixed desktop
+
+
+
+
+
+
+font : 
+Text : Avenir 0.88rem
+headlines: 1.88em
+zeilenabstand: 2rem
+
+
+
+
+
+FARBEN 0,95,200
+
+fontcolor: 35,35,35
+grau 188 188 188
+
+
+
+????
+rechter block für news? -> dynamische Breite???
+

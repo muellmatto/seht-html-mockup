@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        SeHT Münster e.V.
+    </title>
+
+    <link rel="stylesheet" href="css/picnic.min.css" \>
+    <link rel="stylesheet" href="css/font-awesome.min.css" \>
+    <link rel="stylesheet" href="css/seht.css" \>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+    <script src="http://code.responsivevoice.org/responsivevoice.js">
+    </script>
+
+    <script type="text/javascript">
+
+            function startSpeech() {
+                var text = [];
+                text = document.getElementsByTagName("inhalt");
+                lies = text[0].textContent;
+                responsiveVoice.speak(lies, "Deutsch Female",{
+                    onstart: function(){
+                        document.getElementById('SpeechToggleId').className = "fa fa-deaf";
+                    },
+                    onend: function(){
+                        document.getElementById('SpeechToggleId').className = "fa fa fa-assistive-listening-systems";
+                    }
+                });
+                
+            }
+        
+            function stopSpeech() {
+                responsiveVoice.cancel();
+            }
+            
+            function toggleSpeech() {
+                if ( !(responsiveVoice.isPlaying()) ) {
+                    startSpeech();
+                } else {
+                    document.getElementById('SpeechToggleId').className = "fa fa fa-assistive-listening-systems";
+                    stopSpeech();
+                }
+            }
+
+
+            function toggleFont() {
+                var LISTE = document.getElementsByTagName("inhalt")[0].getElementsByTagName("*");
+                // text = document.getElementsByTagName("inhalt")[0];
+                if ( document.getElementById('FontToggleId').className == "fa fa-search-plus" ) {
+                    document.getElementById('FontToggleId').className = "fa fa-search-minus";
+                    originalSize = document.getElementsByTagName("html")[0].style.fontSize;
+                    document.getElementsByTagName("html")[0].style.fontSize = "1.76rem";
+                } else {
+                    document.getElementById('FontToggleId').className = "fa fa-search-plus";
+                    document.getElementsByTagName("html")[0].style.fontSize = originalSize;
+                }
+            }
+
+    </script>
+
+</head>
+
+<body>
+
+
+<!-- top bar -->
+<div class="maxWidth">
+    <div style="margin: 1rem 0 1rem 0; width: inherit;">
+
+
+            <div style="float: right; text-align: center; padding-right: .6rem; padding-left: 0;">
+                <div class="circle" onclick="toggleSpeech()">
+                    <i class="fa fa fa-assistive-listening-systems" id="SpeechToggleId"></i>
+                </div>
+                <div class="circle" onclick="toggleFont()">
+                    <i class="fa fa-search-plus" id="FontToggleId"></i>
+                </div>
+            </div>
+
+            <div style="float: left; padding-left: .6rem; padding-bottom: .6rem;">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="img/seht_icon.svg" style="width: auto; height: 42px;" alt="Logo SeHT Münster e.V.">
+                            <span style="font-size: 2rem;">
+                                SeHT Münster e.V.
+                            </span>
+                    </a>
+            </div>
+
+    </div> 
+</div>
+<!-- top bar -->
+
+
+
+<!-- navigation -->
+<div class="maxWidth">
+    <div style="margin: 0 1rem 0 1rem;"> 
+    
+        <div style="float: left; margin: 0 0rem 0 0;">
+            <a class="button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                <i class="fa fa-user-o">
+                </i>
+                ÜBER UNS
+            </a>
+        </div>
+        <div style="float: left; margin: 0 0rem 0 0;">
+            <a class="pseudo button sehtButton" style="margin: 0; border-radius: 0;" href="#">
+                <i class="fa fa-puzzle-piece">
+                </i>
+                ANGEBOTE
+            </a>
+        </div>
+        <div style="float: left; margin: 0 0rem 0 0;">
+            <a class="pseudo button sehtButton" style="margin: 0; border-radius: 0;" href="#">
+                <i class="fa fa-users">
+                </i>
+                MITTENDRIN
+            </a>
+        </div>
+        <div style="float: left; margin: 0 0rem 0 0;">
+            <a class="pseudo button sehtButton" style="margin: 0; border-radius: 0;" href="#">
+                <i class="fa fa-comments-o">
+                </i>
+                KONTAKT
+            </a>
+        </div>
+
+    </div> 
+</div>
+<!-- navigation end -->
+    
+    
+<!-- image // banner -->
+<div class="desktop" style="background-color: grey; clear: left">
+    <img class="desktop" src="img/banner.png" alt="Cover Image" style="max-height: 500px; display: block; margin: 0 auto;">
+</div>
+<!-- image // banner end -->
+
+
+    
+    
+<!-- sub navigation -->
+<div class="blau-bg" style="overflow: auto; clear: left">
+
+    <div class="maxWidth">
+
+        <div style="margin: 0 1rem 0 1rem;"> 
+
+            <div style="float: left; margin: 0 0rem 0 0;">
+                <a class="button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                    <i class="fa fa-info-circle">
+                    </i>
+                    Verein SeHT
+                </a>
+            </div>
+            <div style="float: left; margin: 0 0rem 0 0;">
+                <a class="subButton button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                    <i class="fa fa-users">
+                    </i>
+                    Team
+                </a>
+            </div>
+            <div style="float: left; margin: 0 0rem 0 0;">
+                <a class="button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                        <i class="fa fa-handshake-o">
+                        </i>
+                    Job/Praktika
+                </a>
+            </div>
+            <div style="float: left; margin: 0 0rem 0 0;">
+                <a class="button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                        <i class="fa fa-download">
+                        </i>
+                    Downloads
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sub navigation end -->
+
+
+
+<!-- content -->
+<div style="clear: both; margin: auto; max-width: 80rem;"> <!-- i am holding everything inside 80rem -->
+    <div style="margin: 0 2rem 0 2rem;"> 
+
+
+        <div class="flex one five-800">
+            <div class="full two-third-800">
+                <h2 style="clear: both;">
+                    SeHT Münster e.V.
+                </h2>
+                <inhalt>
+<p>
+ces lorem ultricies. Erat. Dictum consequat volutpat. Consequat etiam erat. Condimentum. Nascetur. Erat curabitur. Tristique amet, cubilia ve, aptent molestie tincidunt. Turpis. Condimentum urna, elit sociis commodo id sed tristique ligula. Rhoncus id, eros facilisis sollicitudin. Amet eleifend a, bibendum eni, enim eni rutrum aenean posuere feugiat placerat donec nonummy. Dignissim massa.
+</p>
+<p>
+    Nunc scelerisque sodales neque felis nullam. Euismod justo rhoncus mattis non commodo sit, interdum etiam. Odio erat convallis phasellus magna netus montes montes. Lectus sapien augue cum diam. Non habitant habitasse enim donec proin. Vel hac et sagittis. Adipiscing hendrerit, vitae in est condimentum laoreet class erat, ipsum fermentum fringilla. Nec elit mi fringilla a massa at. Ligula phasellus cursus imperdiet pharetra ligula eget ve erat pharetra. Eget tristique ve proin scelerisque ut. Montes fusce iaculis nostra vel gravida. Vestibulum enim netus malesuada dictum fringilla.
+</p>
+<p>
+    Magnis integer varius cras platea facilisis. Arcu fermentum praesent mollis. Ullamcorper volutpat tincidunt eu platea. Diam. Ipsum ac id enim fames maecenas vitae, lobortis odio, volutpat. Consectetuer litora nulla id purus ipsum fames augue rutrum. Ad purus ad tortor habitasse in. Diam vel taciti. Orci quisque nisi, ligula. Lectus euismod aliquet phasellus interdum. Adipiscing bibendum natoque dolor arcu facilisis donec, enim cras erat duis amet dictumst. Pharetra velit fermentum posuere netus diam mattis, ac. Ipsum vestibulum ante lacus senectus. Varius consectetuer phasellus etiam elementum cubilia eros ultrices sollicitudin, ligula justo. Vitae hendrerit. Hac, adipiscing curabitur, ullamcorper. Cubilia.
+</p>
+
+                </inhalt>
+            </div>
+            <div class="full third-800">
+                <p style="margin-top: 100px; margin-left: 1rem;">
+                <hr>
+                SeHT Münster e.V.<br>
+                - Alte Dechanei -<br>
+                Dechaneistr. 14<br>
+                48145 Münster
+                <hr>
+                0251/136920<br>
+                info@seht-münster.de
+                <hr>
+                </p>
+            </div>
+        </div> <!-- flex -->
+
+    </div> <!-- margins -->
+</div> <!-- 80 rem  -->
+
+
+
+<!-- ul class="mobile">
+    <li><a href="<?php echo $Site->url();?>kontakt/impressum">Impressum</a></li>
+</ul -->
+
+
+</body>
+</html>
