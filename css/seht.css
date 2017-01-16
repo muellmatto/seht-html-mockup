@@ -69,10 +69,23 @@ img {
     .desktop {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 50rem) {
     .mobile {
         display: none;
+    }
+
+    .sehtRechts {
+        margin-top: 2.45rem;
+        float: right;
+        width: 12rem;
+    }
+
+    .sehtLinks {
+        margin-top: 2.45rem;
+        float: left;
+        width: calc(100% - 14rem);
     }
 }
