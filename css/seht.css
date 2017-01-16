@@ -1,14 +1,22 @@
-html {
+html, body {
+    line-height: 2rem;
     /*
-    max-width: 60rem;
-    margin: auto;
+    font-family: 'Muli', sans-serif;
     */
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 0.88rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    margin:0;
+    padding:0;
+    color: rgb(35,35,35);
 }
 
-body {
-    line-height: 2rem;
+img {
+    max-width: 100%
+}
+
+h2 {
+    padding-top: 0;
+    font-size: 1.88rem;
 }
 
 .maxWidth {
@@ -18,24 +26,46 @@ body {
 }
 
 .sehtButton {
-    /*  */
-    height: 2.45rem;
+    /* 
+    background: #0074d9;
+    color: #fff;
+    */
+    height: 2.19rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0 .9rem;
+    vertical-align: middle;
+    color: rgb(35,35,35);
+    border: 0;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 0;
+    box-shadow: 0 0 transparent inset;
+    text-decoration: none;
+    background: transparent;
+}
+
+
+.grau {
+    background: rgb(188,188,188);
+    color: white;
+}
+
+.blau {
+    background: rgb(0,95,200);
+    color: white;
 }
 
 .sehtHeight {
     /*
     height: 35px;
     */
-    height: 2.45rem;
+    height: 2.47rem;
 }
 
-.subButton {
-    background: rgb(188,188,188);
-}
 
-img {
-    max-width: 100%
-}
 
 .circle {
     border-radius: 50%;
@@ -54,14 +84,6 @@ img {
     font-size: 3em;
 }
 
-.blau-bg {
-    background-color: rgb(0,95,200); 
-    background: rgb(0,95,200) ;
-}
-
-.blau {
-    color: rgb(0,95,200);
-}
 
 
 /* Verstecken der oberen buttons */
@@ -71,20 +93,26 @@ img {
     }
 
 }
+    
+.sehtRechts {
+    margin-top: 2.45rem;
+}
+
+.sehtLinks {
+    margin-top: 2.45rem;
+}
 
 @media screen and (min-width: 50rem) {
-    .mobile {
-        display: none;
-    }
+.mobile {
+    display: none;
+}
 
     .sehtRechts {
-        margin-top: 2.45rem;
         float: right;
         width: 12rem;
     }
 
     .sehtLinks {
-        margin-top: 2.45rem;
         float: left;
         width: calc(100% - 14rem);
     }

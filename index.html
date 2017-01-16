@@ -9,10 +9,11 @@
         SeHT Münster e.V.
     </title>
 
-    <link rel="stylesheet" href="css/picnic.min.css" \>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" \>
     <link rel="stylesheet" href="css/font-awesome.min.css" \>
     <link rel="stylesheet" href="css/seht.css" \>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <script src="http://code.responsivevoice.org/responsivevoice.js">
     </script>
@@ -68,70 +69,64 @@
 <body>
 
 
-<!-- top bar -->
-<div class="maxWidth">
-    <div style="margin: 1rem 0 1rem 0; width: inherit;">
-
-
-            <div style="float: right; text-align: center; padding-right: .6rem; padding-left: 0;">
-                <div class="circle" onclick="toggleSpeech()">
-                    <i class="fa fa fa-assistive-listening-systems" id="SpeechToggleId"></i>
-                </div>
-                <div class="circle" onclick="toggleFont()">
-                    <i class="fa fa-search-plus" id="FontToggleId"></i>
-                </div>
-            </div>
-
-            <div style="float: left; padding-left: .6rem; padding-bottom: .6rem;">
-                    <a href="#" style="text-decoration: none;">
-                        <img src="img/seht_icon.svg" style="width: auto; height: 42px;" alt="Logo SeHT Münster e.V.">
-                            <span style="font-size: 2rem;">
-                                SeHT Münster e.V.
-                            </span>
-                    </a>
-            </div>
-
-    </div> 
-</div>
-<!-- top bar -->
+    <!-- top bar -->
+        <div class="maxWidth">
+            <div style="margin: 1rem 0 1rem 0; width: inherit;">
+                    <div style="float: right; text-align: center; padding-right: .6rem; padding-left: 0;">
+                        <div class="circle" onclick="toggleSpeech()">
+                            <i class="fa fa fa-assistive-listening-systems" id="SpeechToggleId"></i>
+                        </div>
+                        <div class="circle" onclick="toggleFont()">
+                            <i class="fa fa-search-plus" id="FontToggleId"></i>
+                        </div>
+                    </div>
+                    <div style="float: left; padding-left: .6rem; padding-bottom: .6rem;">
+                            <a href="#" style="text-decoration: none;">
+                                <img src="img/seht_icon.svg" style="width: auto; height: 42px;" alt="Logo SeHT Münster e.V.">
+                                    <span style="font-size: 2rem;">
+                                        SeHT Münster e.V.
+                                    </span>
+                            </a>
+                    </div>
+            </div> 
+        </div>
+    <!-- top bar -->
 
 
 
 <!-- navigation -->
-<div class="maxWidth">
-    <div style="margin: 0 1rem 0 1rem;"> 
-    
-        <div style="float: left; margin: 0 0rem 0 0;">
-            <a class="button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
-                <i class="fa fa-user-o">
-                </i>
-                ÜBER UNS
-            </a>
-        </div>
-        <div style="float: left; margin: 0 0rem 0 0;">
-            <a class="pseudo button sehtButton" style="margin: 0; border-radius: 0;" href="#">
-                <i class="fa fa-puzzle-piece">
-                </i>
-                ANGEBOTE
-            </a>
-        </div>
-        <div style="float: left; margin: 0 0rem 0 0;">
-            <a class="pseudo button sehtButton" style="margin: 0; border-radius: 0;" href="#">
-                <i class="fa fa-users">
-                </i>
-                MITTENDRIN
-            </a>
-        </div>
-        <div style="float: left; margin: 0 0rem 0 0;">
-            <a class="pseudo button sehtButton" style="margin: 0; border-radius: 0;" href="#">
-                <i class="fa fa-comments-o">
-                </i>
-                KONTAKT
-            </a>
-        </div>
-
-    </div> 
-</div>
+    <div class="maxWidth">
+        <div style="margin: 0 1rem 0 1rem;"> 
+            <div style="float: left; margin: 0 0rem 0 0;">
+                <a class="sehtButton blau" href="#">
+                    <i class="fa fa-user-o">
+                    </i>
+                    ÜBER UNS
+                </a>
+            </div>
+            <div style="float: left; margin: 0 0rem 0 0;">
+                <a class="sehtButton" href="#">
+                    <i class="fa fa-puzzle-piece">
+                    </i>
+                    ANGEBOTE
+                </a>
+            </div>
+            <div style="float: left; margin: 0 0rem 0 0;">
+                <a class="sehtButton" href="#">
+                    <i class="fa fa-users">
+                    </i>
+                    MITTENDRIN
+                </a>
+            </div>
+            <div style="float: left; margin: 0 0rem 0 0;">
+                <a class="sehtButton" href="#">
+                    <i class="fa fa-comments-o">
+                    </i>
+                    KONTAKT
+                </a>
+            </div>
+        </div> 
+    </div>
 <!-- navigation end -->
     
     
@@ -145,35 +140,35 @@
     
     
 <!-- sub navigation -->
-<div class="blau-bg" style="overflow: auto; clear: left">
+<div class="blau" style="overflow: auto; clear: left">
 
     <div class="maxWidth">
 
         <div style="margin: 0 1rem 0 1rem;"> 
 
             <div style="float: left; margin: 0 0rem 0 0;">
-                <a class="button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                <a class="sehtButton blau" href="#">
                     <i class="fa fa-info-circle">
                     </i>
                     Verein SeHT
                 </a>
             </div>
             <div style="float: left; margin: 0 0rem 0 0;">
-                <a class="subButton button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                <a class="sehtButton grau" href="#">
                     <i class="fa fa-users">
                     </i>
                     Team
                 </a>
             </div>
             <div style="float: left; margin: 0 0rem 0 0;">
-                <a class="button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                <a class="sehtButton blau" href="#">
                         <i class="fa fa-handshake-o">
                         </i>
                     Job/Praktika
                 </a>
             </div>
             <div style="float: left; margin: 0 0rem 0 0;">
-                <a class="button sehtButton blau-bg" style="margin: 0; border-radius: 0;" href="#">
+                <a class="sehtButton blau" href="#">
                         <i class="fa fa-download">
                         </i>
                     Downloads
@@ -225,11 +220,6 @@
     </div> <!-- margins -->
 </div> <!-- 80 rem  -->
 
-
-
-<!-- ul class="mobile">
-    <li><a href="<?php echo $Site->url();?>kontakt/impressum">Impressum</a></li>
-</ul -->
 
 
 </body>
