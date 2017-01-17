@@ -26,10 +26,10 @@
                 lies = text[0].textContent;
                 responsiveVoice.speak(lies, "Deutsch Female",{
                     onstart: function(){
-                        document.getElementById('SpeechToggleId').className = "fa fa-deaf";
+                        document.getElementById('speechIcon').src = "img/schweig.svg";
                     },
                     onend: function(){
-                        document.getElementById('SpeechToggleId').className = "fa fa fa-assistive-listening-systems";
+                        document.getElementById('speechIcon').src = "img/sprich.svg";
                     }
                 });
                 
@@ -43,7 +43,7 @@
                 if ( !(responsiveVoice.isPlaying()) ) {
                     startSpeech();
                 } else {
-                    document.getElementById('SpeechToggleId').className = "fa fa fa-assistive-listening-systems";
+                    document.getElementById('speechIcon').src = "img/sprich.svg";
                     stopSpeech();
                 }
             }
@@ -52,12 +52,12 @@
             function toggleFont() {
                 var LISTE = document.getElementsByTagName("inhalt")[0].getElementsByTagName("*");
                 // text = document.getElementsByTagName("inhalt")[0];
-                if ( document.getElementById('FontToggleId').className == "fa fa-search-plus" ) {
-                    document.getElementById('FontToggleId').className = "fa fa-search-minus";
+                if ( document.getElementById('fontIcon').src.endsWith("img/tT.svg") ) {
+                    document.getElementById('fontIcon').src = "img/Tt.svg";
                     originalSize = document.getElementsByTagName("html")[0].style.fontSize;
                     document.getElementsByTagName("html")[0].style.fontSize = "1.76rem";
                 } else {
-                    document.getElementById('FontToggleId').className = "fa fa-search-plus";
+                    document.getElementById('fontIcon').src = "img/tT.svg";
                     document.getElementsByTagName("html")[0].style.fontSize = originalSize;
                 }
             }
@@ -72,20 +72,15 @@
     <!-- top bar -->
         <div class="maxWidth">
             <div style="margin: 1rem 0 1rem 0; width: inherit;">
-                    <div style="float: right; text-align: center; padding-right: .6rem; padding-left: 0;">
-                        <div class="circle" onclick="toggleSpeech()">
-                            <i class="fa fa fa-assistive-listening-systems" id="SpeechToggleId"></i>
-                        </div>
-                        <div class="circle" onclick="toggleFont()">
-                            <i class="fa fa-search-plus" id="FontToggleId"></i>
-                        </div>
+                    <div style="float: right; padding: 0 0.6rem 0 0; " onclick="toggleSpeech()">
+                        <img id="speechIcon" src="img/sprich.svg" style="width: auto; height: 3rem;" alt="speech icon">
                     </div>
-                    <div style="float: left; padding-left: .6rem; padding-bottom: .6rem;">
+                    <div style="float: right; padding: 0 0.6rem 0 0;" onclick="toggleFont()">
+                        <img id="fontIcon" src="img/tT.svg" style="width: auto; height: 3rem;" alt="font icon">
+                    </div>
+                    <div style="float: left; padding: 0 0.6rem 2.19rem 0.6rem;">
                             <a href="#" style="text-decoration: none;">
-                                <img src="img/seht_icon.svg" style="width: auto; height: 42px;" alt="Logo SeHT Münster e.V.">
-                                    <span style="font-size: 2rem;">
-                                        SeHT Münster e.V.
-                                    </span>
+                                <img src="img/LOGO.svg" style="width: auto; height: 3rem;" alt="Logo SeHT Münster e.V.">
                             </a>
                     </div>
             </div> 
