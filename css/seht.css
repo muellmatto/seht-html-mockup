@@ -92,6 +92,7 @@ h2 {
         display: none;
     }
 
+
 }
     
 .sehtRechts {
@@ -103,9 +104,9 @@ h2 {
 }
 
 @media screen and (min-width: 50rem) {
-.mobile {
-    display: none;
-}
+    .mobile {
+        display: none;
+    }
 
     .sehtRechts {
         float: right;
@@ -115,5 +116,11 @@ h2 {
     .sehtLinks {
         float: left;
         width: calc(100% - 14rem);
+    }
+
+.footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
     }
 }
