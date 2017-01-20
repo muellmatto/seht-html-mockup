@@ -19,10 +19,19 @@ h2 {
     font-size: 1.88rem;
 }
 
+b, em {
+    color: rgb(0,95,200);
+    font-style: normal;
+}
+
 .maxWidth {
     margin: auto;
     max-width: 77.69rem;
     clear: left;
+}
+
+.sehtrand {
+   margin: 0 2rem 0 2rem; 
 }
 
 .sehtButton {
@@ -85,14 +94,28 @@ h2 {
 }
 
 
+.card {
+    margin: 2.19rem;
+    float: left;
+    border-color: rgb(188,188,188);
+    border-style: solid;
+    border-width: thin;
+}
 
-/* Verstecken der oberen buttons */
-@media screen and (max-width: 50rem) {
-    .desktop {
-        display: none;
-    }
+.card > img {
+    width: 30%;
+    float: left;
+    margin: 0.6rem;
+}
 
+.card > p {
+    margin: 0 0.6rem;
+}
 
+.cardTitle {
+    padding: 1rem;
+    text-align: right;
+    line-height: 1.2rem;
 }
     
 .sehtRechts {
@@ -103,6 +126,16 @@ h2 {
     margin-top: 2.45rem;
 }
 
+
+/* mobile || small */
+@media screen and (max-width: 50rem) {
+    .desktop {
+        display: none;
+    }
+}
+
+
+/* desktop || large */
 @media screen and (min-width: 50rem) {
     .mobile {
         display: none;
@@ -118,9 +151,13 @@ h2 {
         width: calc(100% - 14rem);
     }
 
-.footer {
+    .footer {
         position: fixed;
         width: 100%;
         bottom: 0;
+    }
+
+    .card {
+        width: calc(50% - 5rem);
     }
 }
