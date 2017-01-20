@@ -1,5 +1,5 @@
 html, body {
-    line-height: 2rem;
+    line-height: 1.5rem;
     font-family: 'Muli', sans-serif;
     font-size: 1rem;
     margin:0;
@@ -37,6 +37,7 @@ b, em {
     color: #fff;
     */
     height: 2.19rem;
+    line-height: 1.8rem;
     display: inline-block;
     text-align: center;
     margin: 0;
@@ -92,7 +93,7 @@ b, em {
 
 
 .card {
-    margin: 2.19rem;
+    margin: 1.05rem;
     float: left;
     border-color: rgb(188,188,188);
     border-style: solid;
@@ -155,6 +156,6 @@ b, em {
     }
 
     .card {
-        width: calc(50% - 5rem);
+        width: calc(50% - 3.4rem);
     }
 }
